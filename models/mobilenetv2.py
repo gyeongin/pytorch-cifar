@@ -77,6 +77,10 @@ class MobileNetV2(nn.Module):
         return out
 
 
+def mobilenet_v2_cifar():
+    return MobileNetV2()
+
+
 def test():
     net = MobileNetV2()
     x = torch.randn(2,3,32,32)
